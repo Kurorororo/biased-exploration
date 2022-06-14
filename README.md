@@ -15,7 +15,7 @@ python3 build.py
 
 - Type-LAMA with Softmin-Type(h) using two type-based buckets
 ```bash
-python3 fast-downward.py domain.pddl problem.pddl --evaluator 'hlm=lmcount(lm_factory=lm_rhw(reasonable_orders=true),transform=adapt_costs(one),pref=false)' --evaluator 'hff=ff(transform=adapt_costs(one))' --search 'lazy(alt([single(hff),single(hff,pref_only=true),softmin_type_based([hff,g]),single(hlm),single(hlm,pref_only=true),softmin_type_based([hlm,g])],boost=1000),preferred=[hff,hlm],cost_type=one,reopen_closed=false)'"
+python3 fast-downward.py domain.pddl problem.pddl --evaluator 'hlm=lmcount(lm_factory=lm_rhw(reasonable_orders=true),transform=adapt_costs(one),pref=false)' --evaluator 'hff=ff(transform=adapt_costs(one))' --search 'lazy(alt([single(hff),single(hff,pref_only=true),softmin_type_based([hff,g]),single(hlm),single(hlm,pref_only=true),softmin_type_based([hlm,g])],boost=1000),preferred=[hff,hlm],cost_type=one,reopen_closed=false)'
 ```
 
 - Type-LAMA with Softmin-Type(h)
