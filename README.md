@@ -19,7 +19,7 @@ python3 fast-downward.py domain.pddl problem.pddl --evaluator 'hlm=lmcount(lm_fa
 ```
 
 - Type-LAMA with Softmin-Type(h)
-```
+```bash
 python3 fast-downward.py domain.pddl problem.pddl --evaluator 'hlm=lmcount(lm_factory=lm_rhw(reasonable_orders=true),transform=adapt_costs(one),pref=false)' --evaluator 'hff=ff(transform=adapt_costs(one))' --search 'lazy(alt([single(hff),single(hff,pref_only=true),single(hlm),single(hlm,pref_only=true),softmin_type_based([hff,g])],boost=1000),preferred=[hff,hlm],cost_type=one,reopen_closed=false)'
 ```
 
