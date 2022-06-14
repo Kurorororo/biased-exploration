@@ -30,7 +30,7 @@ python3 fast-downward.py domain.pddl problem.pddl --evaluator 'hff=ff(transform=
 
 - Lin-Type(h) with FF
 ```bash
-python3 fast-downward.py domain.pddl problem.pddl --evaluator 'hff=ff(transform=adapt_costs(one))' --search 'eager(alt([single(hff), linear_weighted_type_based([hff, g()])]), cost_type=one)
+python3 fast-downward.py domain.pddl problem.pddl --evaluator 'hff=ff(transform=adapt_costs(one))' --search 'eager(alt([single(hff), linear_weighted_type_based([hff, g()])]), cost_type=one)'
 ```
 
 - 3-Type(h) with FF
